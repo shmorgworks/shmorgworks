@@ -1,0 +1,365 @@
+/* STYLING SHEET THAT IS LINKED TO DEFAULT.PHP IN THE SITE/TEMPLATES FOLDER */
+
+/* ENTIRE HEADER STYLING */
+.header {
+
+  /*FLOAT THE HEADER LEFT SO THE BODY CAN BE PLACED ALONGSIDE IT */
+  /*width: 300px;*/
+  /*float: left;
+  position: relative;*/
+
+  /*so the border on the about and cv page doesnt touch the header when the page is resized */
+  padding-right: 20px;
+
+}
+
+/* STYLING FOR THE LOGO IN THE NAV MENU */
+.logo {
+
+  text-decoration: none;
+  font-size: 28px;
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.logo:hover {
+
+  opacity: .5;
+
+}
+
+/* NAV MENU STYLING */
+.nav_menu_description {
+
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 15px;
+
+}
+
+.nav_menu {
+
+  list-style: none;
+  margin-left: -20px;
+  margin-top: 30px;
+
+}
+
+.nav_menu_items {
+
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-top: 10px;
+
+}
+
+.nav_menu_items:hover {
+
+  opacity: .5;
+
+}
+
+/* SOCIAL MEDIA ICONS STYLING */
+.social_media_nav_menu {
+
+  margin-left: -30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.social_media_icons {
+
+  display: inline;
+  width: 25px;
+  margin: 3px;
+
+}
+
+.social_media_icons:hover {
+
+  opacity: .5;
+
+}
+
+/* HOME PAGE PROJECTS STYLING */
+
+.projects-list {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 3rem;
+
+}
+
+.projects-images {
+
+  min-width: 100px;
+  max-width: 100%;
+
+}
+
+/* Links from pix */
+.projects:hover {
+
+  opacity: .75;
+
+}
+
+.project-title {
+
+  font-size: 16px;
+
+}
+
+.project-dimensions {
+
+  font-size: 12px;
+}
+
+.project-date {
+
+  font-size: 12px;
+}
+
+/* CV PAGE STYLING */
+
+.cv_headers {
+
+  font-weight: normal;
+  font-size: 25px;
+
+}
+
+.cv_list_container {
+
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 1rem;
+  margin-bottom: 20px;
+  font-size: 14px;
+
+}
+
+/* ABOUT PAGE STYLING */
+
+.about_headers {
+
+  font-weight: normal;
+  font-size: 25px;
+
+}
+
+.about_images {
+
+  min-width: 200px;
+  max-width: 80%;
+  max-height: 500px;
+  margin-bottom: 20px;
+
+  /*max-width: 100% (SIDE BY SIDE VIEW) */
+
+}
+
+/*
+.about_section_container {
+
+ (SIDE BY SIDE VIEW)
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  margin-bottom: 20px;
+  width: 80%
+
+}
+*/
+
+.about_section_text_container {
+/* (SIDE BY SIDE VIEW) */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  margin-bottom: 20px;
+  width: 80%
+  /* columns: 2; */
+
+}
+
+.about_section_text_container p {
+  display: inline-block;
+}
+
+/* about section text styling */
+.about_text {
+
+  font-size: 14px;
+
+}
+
+/* ---------------------- ERROR MESSAGE STYLING --------------------------------- */
+
+.error-message{
+
+  text-align: center;
+  margin-top: 150px;
+  font-size: 20px;
+
+}
+
+.page_columns {
+
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+
+}
+
+/* PAGE STYLING. THIS IS EVERYTHING ON EVERY PAGE THAT IS NOT THE HEADER. IT IS FLOATED RIGHT AND THE HEADER IS FLOATED LEFT. */
+.page {
+
+  /*float: right;*/
+  margin-top: -15px;
+  /* so the page and header are not on top of eachother */
+  /*margin-left: 310px;*/
+  /*margin-right: 40px;*/
+  /*position: absolute;*/
+  border-left: 1px solid black;
+  /* padding adds more space to an element (ie moves the border out). margins add EMPTY space around an element */
+  padding-left: 20px;
+  margin-right: 20px;
+
+}
+
+/* SEPARATE HOME PAGE STYLING BECAUSE I DONT WANT THE LEFT SIDE BORDER LINE ON THIS PAGE */
+.home_page {
+
+  margin-top: -10px;
+  margin-right: 20px;
+
+
+  /*float: right;*/
+
+  /* so the page and header are not on top of eachother */
+  /*margin-left: 310px;*/
+  /*position: absolute;*/
+  /*margin-right: 40px;*/
+
+}
+
+/* BODY STYLING.*/
+body {
+
+  /* Centering the body and giving it a max width */
+  max-width: 1600px;
+  margin: auto;
+
+  margin-top: 30px;
+
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aXp-p7K4KLjztg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* ALL ELEMENTS STYLING */
+
+* {
+
+/* The font-family property can hold several font names as a "fallback" system.
+If the browser does not support the first font, it tries the next font. */
+
+  font-family: 'Montserrat', sans-serif;
+  /*letter spacing: 1.8px; */
+}
+
+
+/* ----------------------- MOBILE STYLING ---------------------------------- */
+
+@media only screen and (max-width: 800px) {
+
+/* change header and page body columns to display two rows for mobile */
+  .page_columns {
+
+    display: block;
+  }
+
+  /*let header take up full space on the top of the page body */
+  .header {
+
+    /*width: 100%;*/
+
+    /* so header can be distinguished from rest of page on mobile */
+    /*border-bottom: 1px solid black; */
+
+  }
+
+
+  /* ----------------------HOME PAGE MOBILE STYLING---------------------------*/
+
+  .home_page {
+
+    /* not totally sure why i need this margin to align. some margin used above i suppose */
+    margin-left: -20px !important;
+    width: 100%;
+
+  }
+
+
+  /*change to list style rather than grid */
+  .projects-list {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  /* add a divider for mobile so titles are not confusing */
+  .projects-container {
+
+    /*border-bottom: 1px solid black;
+    margin-bottom: 20px;*/
+
+  }
+
+  /* Links from pix, dont want there to be opacity change on mobile*/
+  .projects:hover {
+
+    opacity: 1;
+
+  }
+
+  /* -----------------------------CV AND ABOUT MOBILE PAGE STYLING-----------------------------*/
+
+  .page {
+
+    /*some stuff getting cut of on right with 100%*/
+    width: 90%;
+
+    /*get rid of left border on mobile as everything is stacked on top of eachother */
+    border-left: none;
+
+  }
+
+  /*stack and expand about sections to fill the page better */
+  .about_images {
+
+    max-width: 100%;
+
+  }
+
+  .about_section_text_container {
+
+    display: block;
+    width: 100%;
+    columns: auto;
+
+  }
+
+}
