@@ -294,7 +294,7 @@ If the browser does not support the first font, it tries the next font. */
   /*let header take up full space on the top of the page body */
   .header {
 
-    text-align: center;
+    /*text-align: center;*/
   /*  width: 100%; */
 
     /* so header can be distinguished from rest of page on mobile */
