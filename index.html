@@ -1,0 +1,165 @@
+<!-- Importing the snippet of header code (Found in snippets folder) -->
+
+<!-- This is the .php file for the home page. This will display all of the pieces that should be displayed on the home page -->
+
+
+    <html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+  <!-- Displays the page title for each page in the browser tab -->
+  <title> home </title>
+
+  <!-- Link to the css styling file -->
+  <link href="/assets/css/index.css" rel="stylesheet">
+  <!-- Link to Montserrat font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class = "page_columns">
+    <div id = "header_container">
+      <!-- The Navigation menu that will be displayed on the left side of every webpage  -->
+      <header class = "header">
+
+        <!-- Shmorgworks "logo" in the top left corner  -->
+        <a class = "logo" href="/"> shmorgworks </a>
+
+        <!--  Shmorgworks description, Currently: Abstract metal sculptures by L. Morgan Kelley. -->
+        <p class = "nav_menu_description"> metal wall sculptures by <br> L. Morgan Kelley </p>
+
+        <!-- The list of other pages, as well as the contact email button  -->
+        <nav>
+          <ul class = "nav_menu">
+
+            <!-- php for loop that displats the about and cv page links  -->
+                          <li class = "nav_menu_items"><a class = "nav_menu_items" href = "/About">about</a></li>
+                          <li class = "nav_menu_items"><a class = "nav_menu_items" href = "/CV">cv</a></li>
+            
+            <!-- link for the contact button in the nav menu  -->
+            <li class = "nav_menu_items"><a class = "nav_menu_items" href = "mailto:shmorgworks@gmail.com"> contact </a>
+          </ul>
+
+          <!-- The social media icons in the nav menu -->
+          <ul class = "social_media_nav_menu">
+
+            <!-- just hardcoded the static site absolute path for these images because they are inaccessible from kirby objects -->
+            <li class = "social_media_icons"> <a class = "social_media_icons" href = "https://www.instagram.com/shmorgworks/" target="_blank"> <img src = '/assets/images/instagram-icon.svg' class = "social_media_icons" ></a></li>
+            <li class = "social_media_icons"> <a class = "social_media_icons" href = "https://twitter.com/shmorgworks" target="_blank"> <img src = '/assets/images/twitter-icon.svg' class = "social_media_icons" ></a></li>
+            <li class = "social_media_icons"> <a class = "social_media_icons" href = "https://www.tiktok.com/@shmorgworks" target="_blank"> <img src = '/assets/images/tik-tok-icon.svg' class = "social_media_icons" ></a></li>
+
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+
+    <!-- pieces for loop -->
+      <div class = "home_page">
+        <ul class = "projects-list">
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-1/8264214c78-1666900049/image0.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-1/8264214c78-1666900049/image0.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> so I go through the wall. </p>
+                <p class = "project-dimensions"> 31.5 x 22 x .25 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-2/84e7862d28-1666900049/image1.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-2/84e7862d28-1666900049/image1.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> unwittingly faced with something monumental </p>
+                <p class = "project-dimensions"> 21.5 x 16 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-3/e611f39c2d-1666900049/image2.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-3/e611f39c2d-1666900049/image2.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> carry it with me, speak with it often. </p>
+                <p class = "project-dimensions"> 18.5 x 26 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-4/15fb73df98-1666900049/image3.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-4/15fb73df98-1666900049/image3.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> if only </p>
+                <p class = "project-dimensions"> 14.5 x 35.25 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-5/9de47a8b1f-1666900049/image4.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-5/9de47a8b1f-1666900049/image4.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> something austere when the land is cracked, the sky is slanted, and all is shape. </p>
+                <p class = "project-dimensions"> 14 x 13.5 x .25 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-6/d7f2c3f1ec-1666900049/image5.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-6/d7f2c3f1ec-1666900049/image5.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> i have often found myself staring at ceiling fans </p>
+                <p class = "project-dimensions"> 43 x 37 x .5 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-7/34d5f189a4-1666900049/image6.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-7/34d5f189a4-1666900049/image6.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> burst your bubble </p>
+                <p class = "project-dimensions"> 23 x 24 x 1 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+          
+              <li class = "projects-container">
+
+                <!-- we need to use the absolute url for static site generation -->
+                
+                <!-- Images are displayed with a weird path in the browser, maybe I can fix this -->
+                <a href="/media/pages/pieces/project-8/1b662580b2-1666900049/image7.jpeg" class = "projects"> <img src = "/media/pages/pieces/project-8/1b662580b2-1666900049/image7.jpeg" class = "projects-images"> </a>
+                <p class = "project-title"> conversations surrounding the glass table </p>
+                <p class = "project-dimensions"> 30 x 29 x 1 inches </p>
+                <p class = "project-date"> 2022 </p>
+              </li>
+
+                  <ul>
+
+      </div>
+
+      <!-- closing div for the .page_columns class -->
+    </div>
+  </body>
+</html>
